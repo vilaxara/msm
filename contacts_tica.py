@@ -31,8 +31,8 @@ X = inp.get_output()
 
 
 # Dimensional reduction
-lag = 100  # tica lagtime
-tica_obj = coor.tica(X, lag4=tica_lag)
+tica_lag = 100  # tica lagtime
+tica_obj = coor.tica(X, lag=tica_lag)
 print ('Retained dimension: ', tica_obj.dimension())
 Y = tica_obj.get_output()
 

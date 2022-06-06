@@ -13,7 +13,7 @@ feat = coor.featurizer(topfile)
 traj_list=[] # Create a list of xtc file locations
 
 inp = coor.source(traj_list, feat)
-X = inp.get_output()
+#X = inp.get_output()
 
 dtrajs = np.load('dtrajs.npy',allow_pickle=True)
 dtrajs = list(dtrajs)
